@@ -288,6 +288,14 @@ li {
 
 }
 
+footer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 75vh;
+	left: 0;
+}
+
 button {
 	color: #fff;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
