@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+
+	<title>PORTFÓLIO</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+
+
+	<div class="hero-container" id="hero-container">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#hero-container" class="actived"><b>Home </b></a></li>
+					<li><a href="#profile-card" class="actived"><b>Perfil </b></a></li>
+					<li><a href="#project-container" class="actived"><b>Projetos </b></a></li>
+					<li><a href="#profile-contato" class="actived"><b>Contato </b></a></li>
+				</ul>
+			</nav>
+		</header>
+		<h1>Procurando um Desenvolvedor ?</h1>
+		<svg class="arrows">
+			<path class="a1" d="M0 0 L30 32 L60 0"></path>
+			<path class="a2" d="M0 20 L30 52 L60 20"></path>
+			<path class="a3" d="M0 40 L30 72 L60 40"></path>
+		</svg>
+	</div>
+
+	<section>
+		<div class="content-container" id="content-container">
+			<div class="profile-container" id="profile-container">
+				<div class="profile-content" id="profile-content">
+					<div class="profile-card" id="profile-card">
+						<img class="profile-image" src="./imagens/433c1b82-fc4b-4ecc-8da2-6fb4d535e097.jpeg">
+						<span class="name-text">Luis Carlos</span>
+						<br>
+						<br>
+						<span class="profile-text">" Criando, Inovando e Desenvolvendo o Presente, olhando para o
+							Futuro,
+							com a experiência do Passado"
+						</span>
+						<a href="https://www.linkedin.com/in/luis-carlos-azarias-207426280" target="blank">
+							<button class="profile-button">Conhecer o Linkedin <img class="icon-item"></button>
+						</a>
+						
+							<div class="icons-container" id="icons container">
+								<img class="icon-item" src="./imagens/jsII.png" />
+								<img class="icon-item" src="./imagens/HTMLII.png" />
+								<img class="icon-item" src="./imagens/CSSII.png" />
+								<img class="icon-item" src="./imagens/CII.png" />
+							</div>
+						
+					</div>
+				</div>
+				<p class="profile-sinopse">
+					Construir uma carreira na área de desenvolvimento de software tendo como base minhas habilidades
+					de
+					organização, comunicação e trabalho em equipe, adquiridas em experiências anteriores a partir da
+					exploração da multidisciplinaridade de outras áreas.
+					Sempre com grande interesse na área de informática, curso atualmente o 6º semestre de Bacharel
+					em
+					Tecnologia da informação pela Universidade Virtual do Estado de São Paulo – UNIVESP.
+					Mantendo-me sempre atualizado no mundo da tecnologia e do desenvolvimento, realizo formação nas
+					áreas de
+					HTML- CSS - JavaScript - React - C# - Banco de Dados.
+					Considero-me uma pessoa organizada e pró-ativa, que busca desenvolver o aprendizado adquirido e
+					colocá-lo sempre em prática.
+				</p>
+				<div class="home">
+					<a href="#hero-container">
+						<button>Home</button></a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section>
+		<div class="content-container">
+			<div class="project-container" id="project-container">
+				<div class="project-content">
+					<div class="position-container left">
+						<div class="project-card">
+							<image class="project-image" src="./imagens/Tab IMC 2025-03-10 17-53-49.png" />
+							<p class="project-text">
+								"Projeto desenvolvido com o objetivo de simular uma calculadora para verificar o Indice
+								de Massa Corpórea (IMC)" - para este projeto foi utilizado as linguagens:
+								HTML-CSS-JavaScript
+							</p>
+						</div>
+						<div class="position-container right">
+							<div class="project-card">
+								<image class="project-image" src="./imagens/Calculadora 2025-03-10 17-59-48.png" />
+								<p class="project-text">
+									"Projeto desenvolvido com o objetivo de simular uma calculadora para efetuar
+									cálculos básicos" - para este projeto foi utilizado as linguagens:
+									HTML-CSS-JavaScript
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="position-container left">
+						<div class="project-card">
+							<image class="project-image" src="./imagens/Batman 2025-03-10 17-56-38.png" />
+							<p class="project-text">
+								"Projeto desenvolvido com o objetivo de simular um site para vendas de ingresso
+								referente ao
+								filme do Batman" - para este projeto foi utilizado as linguagens:
+								HTML-CSS-JavaScript
+							</p>
+						</div>
+					</div>
+				</div>
+	</section>
+
+	<section>
+		<div class="profile-contato" id="profile-contato">
+
+
+			<form action="https://formsubmit.co/LCAzarias33@gmail.com" method="POST" class="form-contato">
+				<h2>CONTATO</h2>
+				<label for="nome">Nome</label>
+				<input type="text" id="nome" placeholder="Digite seu nome" required name="nome" />
+				<label for="fone">Fone</label>
+				<input type="tel" id="fone" placeholder="(xx)xx-xx-xx-xx" name="fone" required />
+				<label for="email">Email</label>
+				<input type="email" id="email" placeholder="fulano@mail.com" name="email" />
+				<label for="texto">Mensagem</label>
+				<textarea placeholder="Deixe sua mensagem" name="texto" cols="50px" rows="10px"></textarea>
+				<button type="submit" class="btn-submit">Enviar</button>
+			</form>
+				
+					<a href="#hero-container">
+						<button>Home</button></a>
+				
+		</div>
+	</section>
+
+</body>
+
+</html>
