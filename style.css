@@ -1,11 +1,23 @@
+
 body {
-	margin: 0;
-	padding: 0;
-	width: 100vw;
-	height: 100vh;
-}
+            font-size: 1rem; /* 1 rem = 16px */
+        }
 
+        /* Estilos para telas maiores (ex: desktop) */
+        .conteudo {
+            width: 80vw; /* 80% da largura da tela */
+            margin: 20px auto; /* Margem automática para centralizar */
+        }
 
+        /* Estilos para telas menores (ex: mobile) */
+        @media (max-width: 768px) {
+            .conteudo {
+                width: 95vw; /* Ajuste para telas menores */
+            }
+            .conteudo p {
+                font-size: 1.2rem; /* Ajuste tamanho da fonte para mobile */
+            }
+        }
 
 h2 {
 	align-items: flex-start;
