@@ -362,8 +362,8 @@ p {
 
 .icons-container {
 	display: flex;
-	width: 90%;
-	justify-content: space-around;
+	width: 70%;
+	justify-content: space-between;
 	margin-left: 20px;
 	margin-top: 10px;
 }
@@ -374,11 +374,11 @@ p {
 }
 
 .profile-sinopse {
-	width: 350px;
+	width: 23.5vw;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #fff;
-	font-size: 25px;
-	flex-direction: row;
+	font-size: 24px;
+	flex-direction: column;
 	display: flex;
 	justify-content: center;
 }
