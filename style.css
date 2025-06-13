@@ -313,7 +313,7 @@ button {
 	border-radius: 10px;
 	border: 2px solid #333;
 	box-shadow: 4px 4px #fff;
-	padding: 10px 10px 10px 10px;
+	padding: 10px 12px 10px 12px;
 	background-color: rgb(3, 3, 85);
 	cursor: pointer;
 	display: flex;
