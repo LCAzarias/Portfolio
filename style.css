@@ -1,16 +1,25 @@
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
+}  
+
+@media (max-width: 768px) {
+     /* Estilos para telas menores que 768px */
+     .menu {
+       width: 100%;
+     }
+   }
+
+
 
 html {
-    height: 100vh;
+	height: 100vh;
 	font-size: 16px;
 }
+
 body {
-    min-height: 100vh;
+	min-height: 100vh;
 }
 
 h2 {
@@ -130,21 +139,6 @@ li {
 	padding: 2px;
 }
 
-#retorna {
-	color: #fff;
-	position: relative;
-	bottom: 0;
-	right: 0;
-	top: 320px;
-	left: 20px;
-	display: flex;
-}
-
-#retorna button:hover {
-	color: yellow;
-	transform: scale(1.1);
-	transition: all 0.4s ease-in;
-}
 
 .arrows {
 	width: 60px;
@@ -352,6 +346,14 @@ button:hover {
 	align-items: center;
 }
 
+.home-form {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	float: inline-start;
+}
+
 p {
 	font-size: 25px;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -366,7 +368,7 @@ p {
 	justify-content: center;
 	margin-left: 10px;
 	margin-top: 12px;
-	
+
 }
 
 .icon-item {
