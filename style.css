@@ -241,7 +241,7 @@ li {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 25vw;
+	width: 26vw;
 	background: #fff;
 	padding: 50px;
 	border-radius: 8px;
@@ -344,9 +344,9 @@ button:hover {
 	cursor: pointer;
 	color: #302cfc;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	font-size: 23px;
+	font-size: 24px;
 	margin-top: 20px;
-	margin-left: 10px;
+	margin-left: 8px;
 	font-weight: bold;
 	text-align: end;
 	align-items: center;
@@ -381,7 +381,8 @@ p {
 	font-size: 23px;
 	flex-direction: column;
 	display: flex;
-	justify-content: center;
+	justify-content: end;
+	align-items: end;
 }
 
 .project-container {
