@@ -2,14 +2,15 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}  
+}
 
 @media (max-width: 768px) {
-     /* Estilos para telas menores que 768px */
-     .menu {
-       width: 100%;
-     }
-   }
+
+	/* Estilos para telas menores que 768px */
+	.menu {
+		width: 100%;
+	}
+}
 
 
 
@@ -346,7 +347,7 @@ button:hover {
 	align-items: center;
 }
 
-.home-form {	
+.home-form {
 	display: inline-flex;
 	justify-content: center;
 	flex-direction: row;
