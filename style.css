@@ -1,24 +1,10 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
-	border: none;
 }
 
-@media (max-width: 768px) {
-
-	/* Estilos para telas menores que 768px */
-	.menu {
-		width: 100%;
-	}
-}
 
 html {
-	height: 100vh;
-	font-size: 16px;
-}
-
-body {
 	min-height: 100vh;
 }
 
@@ -83,12 +69,13 @@ textarea {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	background-image: url(./imagens/nubelson-fernandes-iE71-TMrrkE-/unsplash.jpg);
+	background-image: url(./imagens/nubelson-fernandes-iE71-TMrrkE-unsplash.jpg);
 	background-attachment: fixed;
-	background-position: center center;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 20px;
+	background-color: #302cfc;
 }
 
 h1 {
@@ -298,7 +285,7 @@ li {
 	box-shadow: 4px 4px #fff;
 	background-color: rgb(3, 3, 85);
 	cursor: pointer;
-	padding: 12px 0px 10px 15px;
+	padding: 12px 0px 10px 5px;
 	display: grid;
 	justify-content: space-around;
 	background-repeat: no-repeat;
@@ -306,7 +293,7 @@ li {
 	margin-bottom: 20px;
 	margin-left: 15px;
 	background-position: right;
-	}
+}
 
 footer {
 	display: flex;
@@ -367,34 +354,35 @@ button:hover {
 }
 
 .home-form button {
-	width: 10vw;
+	width: 7vw;
 	height: 7vh;
 	border-radius: 10px;
-	border: 4px 4 px solid;
-	padding: 12px 0px 10px 5px;
+	border: solid;
+	padding: 18px 10px 5px 15px;
 	display: grid;
-	justify-content: space-evenly;
+	text-align: center;
+	align-items: center;
 	background-repeat: no-repeat;
-	margin-top: 15px;
+	top: 5px;
+	left: 10px;
+	margin-top: 18px;
 	margin-bottom: 20px;
-	margin-left: 15px;
-	background-position: right;
-	}
+	margin-left: 10px;
+	background-image: url(./imagens/home-iconGimp.png);
+}
 
-.icon-projeto {
+/*.icon-projeto {
 	width: 10px;
 	height: 8px;
 	padding: 24px;
-	align-items: center;
+	align-items: flex-start;
 	margin-left: 0;
 	margin-right: 10px;
 	background-image: url(./imagens/home-iconGimp.png);
 	position: absolute;
 	float: 5px;
 	background-repeat: no-repeat;
-	display: grid;
-	justify-content: space-evenly;
-}
+}*/
 
 p {
 	font-size: 25px;
