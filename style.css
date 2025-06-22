@@ -107,15 +107,6 @@ textarea {
 	padding-top: 20px;
 	background-color: #302cfc;
 
-		@media (max-width: 360px) { 
-		font-size: 20px;
-		padding: 5px;
-		margin: 0 auto;
-		display: block;
-		justify-content: center;
-		align-items: center;
-		display: grid;
-}
 }
 
 h1 {
@@ -138,15 +129,6 @@ nav {
 	max-width: 1000px;
 	display: flex;
 	flex-wrap: wrap;
-			@media (max-width: 360px) {	
-		font-size: 20px;
-		padding: 5px;
-		margin: 0 auto;
-		display: block;
-		justify-content: center;
-		align-items: center;
-		display: grid;	
-}
 }
 
 header a {
@@ -163,15 +145,6 @@ header a {
 	justify-content: space-between;
 	flex-wrap: wrap;
 
-	@media (max-width: 360px) { 
-		font-size: 20px;
-		padding: 5px;
-		margin: 0 auto;
-		display: block;
-		justify-content: center;
-		align-items: center;
-		display: block;	
-	}
 }
 
 
