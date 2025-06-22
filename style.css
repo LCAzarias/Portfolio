@@ -108,7 +108,7 @@ textarea {
 	background-color: #302cfc;
 
 		@media (max-width: 360px) {
-		header {
+		.hero-container {
 		font-size: 20px;
 		padding: 5px;
 		margin: 0 auto;
@@ -130,9 +130,10 @@ h1 {
 	flex-wrap: wrap;
 
 	@media (max-width: 1000px) {
+		h1 {
 		font-size: 30px;
-
 	}
+}
 }
 
 nav {
@@ -140,6 +141,17 @@ nav {
 	max-width: 1000px;
 	display: flex;
 	flex-wrap: wrap;
+			@media (max-width: 360px) {
+		nav {
+		font-size: 20px;
+		padding: 5px;
+		margin: 0 auto;
+		display: block;
+		justify-content: center;
+		align-items: center;
+		display: grid;
+	}
+}
 }
 
 header a {
