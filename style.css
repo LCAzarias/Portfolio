@@ -108,7 +108,7 @@ textarea {
 	background-color: #302cfc;
 
 		@media (max-width: 360px) {
-		header a {
+		header {
 		font-size: 20px;
 		padding: 5px;
 		margin: 0 auto;
