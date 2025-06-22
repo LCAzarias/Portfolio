@@ -22,7 +22,7 @@ header {
 	justify-content: space-between;
 	overflow: hidden;
 
-		@media (max-width: 1000px) {
+		@media (max-width: 360px) {
 		header a 
 		font-size: 20px;
 		padding: 5px;
@@ -106,7 +106,7 @@ textarea {
 	padding-top: 20px;
 	background-color: #302cfc;
 
-		@media (max-width: 1000px) {
+		@media (max-width: 360px) {
 		header a 
 		font-size: 20px;
 		padding: 5px;
@@ -128,7 +128,7 @@ h1 {
 	flex-wrap: wrap;
 
 	@media (max-width: 1000px) {
-		font-size: 35px;
+		font-size: 30px;
 
 	}
 }
@@ -154,7 +154,7 @@ header a {
 	justify-content: space-between;
 	flex-wrap: wrap;
 
-	@media (max-width: 1000px) {
+	@media (max-width: 360px) {
 		header a 
 		font-size: 20px;
 		padding: 5px;
@@ -162,7 +162,7 @@ header a {
 		display: block;
 		justify-content: center;
 		align-items: center;
-		display: grid;
+		display: block;
 	}
 	}
 
