@@ -107,8 +107,7 @@ textarea {
 	padding-top: 20px;
 	background-color: #302cfc;
 
-		@media (max-width: 360px) {
-		.hero-container {
+		@media (max-width: 360px) { 
 		font-size: 20px;
 		padding: 5px;
 		margin: 0 auto;
@@ -116,7 +115,6 @@ textarea {
 		justify-content: center;
 		align-items: center;
 		display: grid;
-	}
 }
 }
 
@@ -130,9 +128,8 @@ h1 {
 	flex-wrap: wrap;
 
 	@media (max-width: 1000px) {
-		h1 {
+		
 		font-size: 30px;
-	}
 }
 }
 
@@ -141,16 +138,14 @@ nav {
 	max-width: 1000px;
 	display: flex;
 	flex-wrap: wrap;
-			@media (max-width: 360px) {
-		nav {
+			@media (max-width: 360px) {	
 		font-size: 20px;
 		padding: 5px;
 		margin: 0 auto;
 		display: block;
 		justify-content: center;
 		align-items: center;
-		display: grid;
-	}
+		display: grid;	
 }
 }
 
@@ -168,16 +163,14 @@ header a {
 	justify-content: space-between;
 	flex-wrap: wrap;
 
-	@media (max-width: 360px) {
-		header a {
+	@media (max-width: 360px) { 
 		font-size: 20px;
 		padding: 5px;
 		margin: 0 auto;
 		display: block;
 		justify-content: center;
 		align-items: center;
-		display: block;
-	}
+		display: block;	
 	}
 }
 
