@@ -23,7 +23,7 @@ header {
 	overflow: hidden;
 
 		@media (max-width: 360px) {
-		header a 
+		header { 
 		font-size: 20px;
 		padding: 5px;
 		margin: 0 auto;
@@ -32,6 +32,7 @@ header {
 		align-items: center;
 		display: grid;
 	}
+}
 }
 
 
