@@ -6,7 +6,30 @@
 
 html {
 	min-height: 100vh;
+	width: 100%;
 }
+
+header {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	overflow: hidden;
+
+		@media (max-width: 1000px) {
+		header a 
+		font-size: 20px;
+		padding: 5px;
+		margin: 0 auto;
+		display: block;
+		justify-content: center;
+		align-items: center;
+		display: grid;
+	}
+}
+
 
 h2 {
 	align-items: flex-start;
@@ -66,6 +89,8 @@ textarea {
 	height: 100vh;
 	width: 100vw;
 	display: flex;
+	margin: 0 auto;
+	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
@@ -76,19 +101,44 @@ textarea {
 	background-size: cover;
 	padding-top: 20px;
 	background-color: #302cfc;
+
+		@media (max-width: 1000px) {
+		header a 
+		font-size: 20px;
+		padding: 5px;
+		margin: 0 auto;
+		display: block;
+		justify-content: center;
+		align-items: center;
+		display: grid;
+	}
 }
 
 h1 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 60px;
 	color: #fff;
+	width: 100%;
+	max-width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+
+	@media (max-width: 1000px) {
+		font-size: 35px;
+
+	}
 }
 
 nav {
-	width: 50%;
+	width: 100%;
+	max-width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 header a {
+	width: 100%;
+	max-width: 1000px;
 	display: flex;
 	text-decoration: none;
 	color: #fff;
@@ -96,8 +146,22 @@ header a {
 	font-size: 30px;
 	padding: 10px;
 	position: relative;
-	margin-top: 10px;
-}
+	margin: 0 auto;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	@media (max-width: 1000px) {
+		header a 
+		font-size: 20px;
+		padding: 5px;
+		margin: 0 auto;
+		display: block;
+		justify-content: center;
+		align-items: center;
+		display: grid;
+	}
+	}
+
 
 a:hover {
 	color: yellow;
@@ -115,7 +179,10 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
-	width: 700px;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	flex-wrap: wrap;
 }
 
 li {
@@ -124,6 +191,9 @@ li {
 	font-size: 30px;
 	cursor: pointer;
 	padding: 2px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
 }
 
 .arrows {
