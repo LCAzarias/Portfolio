@@ -155,7 +155,7 @@ header a {
 	flex-wrap: wrap;
 
 	@media (max-width: 360px) {
-		header a 
+		header a {
 		font-size: 20px;
 		padding: 5px;
 		margin: 0 auto;
@@ -165,6 +165,7 @@ header a {
 		display: block;
 	}
 	}
+}
 
 
 a:hover {
