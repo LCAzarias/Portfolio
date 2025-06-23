@@ -20,15 +20,18 @@
 	<div class="hero-container" id="hero-container">
 
 		<header>
-			   <i id="burger" class="material-icons">menu</i>
-			<nav>
-				<ul>
-					<li><a href="#hero-container" class="actived"><b>Home </b></a></li>
-					<li><a href="#profile-card" class="actived"><b>Perfil </b></a></li>
-					<li><a href="#project-container" class="actived"><b>Projetos </b></a></li>
-					<li><a href="#profile-contato" class="actived"><b>Contato </b></a></li>
-				</ul>
-			</nav>
+			<i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
+
+			<menu id="itens">
+				
+					<ul>
+						<li><a href="#hero-container" class="actived"><b>Home </b></a></li>
+						<li><a href="#profile-card" class="actived"><b>Perfil </b></a></li>
+						<li><a href="#project-container" class="actived"><b>Projetos </b></a></li>
+						<li><a href="#profile-contato" class="actived"><b>Contato </b></a></li>
+					</ul>
+				
+			</menu>
 		</header>
 		<h1>Procurando um Desenvolvedor ?</h1>
 		<svg class="arrows">
@@ -157,7 +160,7 @@
 			</footer>
 		</div>
 	</section>
-
+	<script src="menu.js"></script>
 </body>
 
 </html>

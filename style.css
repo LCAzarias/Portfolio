@@ -21,6 +21,7 @@ header {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	overflow: hidden;
+	color: #fff;
 
 	@media (max-width: 360px) {
 		header {
@@ -124,32 +125,40 @@ h1 {
 	}
 }
 
- .material-icons {
+i#burger {
 	color: #fff;
 	font-size: 70px;
 	display: block;
 	text-align: center;
 	padding: 10px;
 	cursor: pointer;
-	margin: 0 auto;
- }
 
- i#burger:hover{
-	background-color:#333;
+	@media (max-width: 750px) {
+		font-size: 50px;
+		padding: 5px;
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
+		color: yellow;
+	}
+}
+
+i#burger:hover {
+	background-color: #333;
 	color: yellow;
 	transform: scale(1.1);
 	transition: all 0.4s ease-in;
 
- }
+}
 
-nav {
+/*nav {
 	width: 100%;
 	max-width: 1000px;
 	display: flex;
 	flex-wrap: wrap;
-}
+}*/
 
-header a {
+#itens {
 	width: 100%;
 	max-width: 1000px;
 	display: flex;
@@ -163,19 +172,33 @@ header a {
 	justify-content: space-between;
 	flex-wrap: wrap;
 
-	@media (max-width: 450px) {
-			font-size: 20px;
-			padding: 5px;
-			margin: 0 auto;
-			display: none;
-			justify-content: center;
-			align-items: center;
-
-	
-}
 }
 
-a:hover {
+.actived {
+	color: #fff;
+	border-radius: 10px;
+	padding: 15px 10px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	max-width: 1000px;
+
+	@media (max-width: 750px) {
+		font-size: 20px;
+		padding: 5px;
+		margin: 0 auto;
+		display: none;
+		justify-content: center;
+		align-items: center;
+
+	}
+}
+
+
+.actived:hover {
 	color: yellow;
 	transform: scale(1.1);
 	transition: all 0.4s ease-in;
