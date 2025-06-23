@@ -145,6 +145,18 @@ header a {
 	justify-content: space-between;
 	flex-wrap: wrap;
 
+	@media screen and (max-width: 450px) {
+		font-size: 20px;
+		padding: 5px;
+		margin: 0 auto;
+		display: block;
+		justify-content: center;
+		align-items: center;
+		display: grid;
+		color: red;
+		
+	}
+
 }
 
 
