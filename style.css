@@ -124,7 +124,7 @@ h1 {
 	}
 }
 
-i#burger {
+.burger {
 	color: #fff;
 	font-size: 70px;
 	display: block;
@@ -143,12 +143,11 @@ i#burger {
 	}
 }
 
-i#burger:hover {
+.burger:hover {
 	background-color: #333;
 	color: yellow;
 	transform: scale(1.1);
 	transition: all 0.4s ease-in;
-
 }
 
 nav {
@@ -157,6 +156,23 @@ nav {
 	display: flex;
 	flex-wrap: wrap;
 	color: #fff;
+
+	@media (max-width: 750px) {
+		font-size: 50px;
+		padding: 5px;
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
+		color: yellow;
+		display: block;
+	}
+}
+
+.nav:hover {
+	background-color: #333;
+	color: yellow;
+	transform: scale(1.1);
+	transition: all 0.4s ease-in;
 }
 
 #menu {
