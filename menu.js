@@ -1,4 +1,4 @@
 
 function clickMenu(){
-	itens.style.display = 'block';
+	menu.style.display ="block";
 }

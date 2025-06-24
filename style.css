@@ -23,7 +23,7 @@ header {
 	overflow: hidden;
 	color: #fff;
 
-	@media (max-width: 750px) {
+	@media (max-width: 350px) {
 		header {
 			font-size: 20px;
 			padding: 5px;
@@ -32,6 +32,7 @@ header {
 			justify-content: center;
 			align-items: center;
 			display: block;
+			color: #fff;
 		}
 	}
 }
@@ -116,11 +117,11 @@ h1 {
 	width: 100%;
 	max-width: 1000px;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 
 	@media (max-width: 1000px) {
 
-		font-size: 30px;
+		font-size: 25px;
 	}
 }
 
@@ -139,7 +140,7 @@ i#burger {
 		justify-content: center;
 		align-items: center;
 		color: yellow;
-		display: block;
+		display: flex;
 	}
 }
 
@@ -151,17 +152,18 @@ i#burger:hover {
 
 }
 
-/*nav {
+nav {
 	width: 100%;
 	max-width: 1000px;
 	display: flex;
 	flex-wrap: wrap;
-}*/
+	color: #fff;
+}
 
-#itens {
+#menu {
 	width: 100%;
 	max-width: 1000px;
-	display:flex;
+	display:block;
 	text-decoration: none;
 	color: #fff;
 	font-family: Arial, Helvetica, sans-serif;
@@ -193,6 +195,7 @@ i#burger:hover {
 		display: none;
 		justify-content: center;
 		align-items: center;
+		color: #fff;
 
 	}
 }
@@ -218,6 +221,7 @@ ul {
 	max-width: 1000px;
 	margin: 0 auto;
 	flex-wrap: wrap;
+	color: #fff;
 
 }
 
