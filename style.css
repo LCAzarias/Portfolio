@@ -31,7 +31,6 @@ header {
 			display: block;
 			justify-content: center;
 			align-items: center;
-			display: block;
 			color: #fff;
 		}
 	}
@@ -128,7 +127,7 @@ h1 {
 i#burger {
 	color: #fff;
 	font-size: 70px;
-	display: none;
+	display: block;
 	text-align: center;
 	padding: 10px;
 	cursor: pointer;
@@ -140,7 +139,7 @@ i#burger {
 		justify-content: center;
 		align-items: center;
 		color: yellow;
-		display: flex;
+		display: block;
 	}
 }
 
@@ -173,7 +172,10 @@ nav {
 	margin: 0 auto;
 	justify-content: space-between;
 	flex-wrap: wrap;
+}
 
+span {
+	color: #fff;
 }
 
 .actived {
@@ -195,7 +197,7 @@ nav {
 		display: none;
 		justify-content: center;
 		align-items: center;
-		color: #fff;
+
 
 	}
 }
