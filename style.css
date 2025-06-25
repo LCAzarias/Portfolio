@@ -150,10 +150,10 @@ h1 {
 	transition: all 0.4s ease-in;
 }
 
-nav {
+ul {
 	width: 100%;
 	max-width: 1000px;
-	display: flex;
+	display: block;
 	flex-wrap: wrap;
 	color: #fff;
 
@@ -168,7 +168,7 @@ nav {
 	}
 }
 
-.nav:hover {
+.ul:hover {
 	background-color: #333;
 	color: yellow;
 	transform: scale(1.1);
@@ -192,6 +192,23 @@ nav {
 
 span {
 	color: #fff;
+	font-size: 70px;
+
+		@media (max-width: 750px) {
+		font-size: 50px;
+		padding: 5px;
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
+		color: yellow;
+		display: block;
+	}
+}
+
+span:hover {
+	color: yellow;
+	transform: scale(1.8);
+	transition: all 0.4s ease-in;
 }
 
 .actived {
