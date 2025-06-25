@@ -227,7 +227,7 @@ span:hover {
 		font-size: 20px;
 		padding: 5px;
 		margin: 0 auto;
-		display: none;
+		display: flex;
 		justify-content: center;
 		align-items: center;
 
