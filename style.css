@@ -98,6 +98,26 @@ textarea {
 	padding-top: 20px;
 }
 
+@media (max-width: 768px) {
+	.hero-container {
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		margin: 0 auto;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		background-image: url(./imagens/nubelson-fernandes-iE71-TMrrkE-unsplash.jpg);
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 20px;
+		opacity: 0.8;
+	}
+}
+
 h1 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 60px;
@@ -113,10 +133,17 @@ h1 {
 	}
 }
 
+.icons{
+	font-size: 50px;
+	width: 50%;
+	height: 50%;
+	color: #fff;
+}
+
 .material-symbols-outlined {
 	width: 50px;
 	height: 50px;
-	font-size: 35px;
+	font-size: 55px;
 	color: red;
 	display: flex;
 	text-align: center;
@@ -125,6 +152,7 @@ h1 {
 	background-color: #fff;
 	border-radius: 100%;
 	margin-top: 10px;
+	font-variation-settings: 'OPSZ' 24;
 
 	@media (max-width: 768px) {
 		font-size: 30px;
@@ -161,7 +189,7 @@ h1 {
 
 span {
 	color: black;
-	font-size: 40px;
+	font-size: 70px;
 	font-family: Arial, Helvetica, sans-serif;
 	margin-top: 80px;
 	text-align: center;
@@ -188,12 +216,13 @@ span:hover {
 	border-radius: 10px;
 	padding: 15px 10px;
 	margin: 0 auto;
-	display: block;
+	display: inline-block;
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
 	width: 100%;
 	max-width: 1000px;
+	text-decoration: none;
 
 	@media (max-width: 750px) {
 		font-size: 20px;
@@ -223,9 +252,10 @@ li {
 	font-size: 30px;
 	cursor: pointer;
 	padding: 2px;
-	display: flex;
+	display: inline-block;
 	flex-wrap: wrap;
 	margin: 0 auto;
+	text-decoration: none;
 }
 
 .arrows {
