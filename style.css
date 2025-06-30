@@ -225,10 +225,10 @@ h1 {
 .hamburguer {
 		display: block;
 		width: 15px;
-		height: 4px;
+		height: 3.8px;
 		position: relative;
 		top: 21px;
-		left: 2px;
+		left: 1px;
 		cursor: pointer;
 	}
 .hamburguer:before {
