@@ -172,13 +172,14 @@ h1 {
 }*/
 
 .menu {
-	background: #fff;
+	background: #454545;
 	width: 70px;
 	height: 70px;
 	display: flex;
 	border-radius: 50%;
+	border: 1px solid #fff;
 	position: relative;
-	top: 20px;
+	top: 36px;
 	left: 2px;
 
 	@media (max-width: 768px) {
@@ -186,25 +187,25 @@ h1 {
 		width: 43px;
 		height: 43px;
 		position: relative;
-		top: 30px;
+		top: 33px;
 		margin: 0 auto;
 	}
 }
 
 .hamburguer {
 	display: block;
-	background: black;
+	background: #fff;
 	width: 30px;
 	height: 4.5px;
 	position: relative;
-	top: 36px;
+	top: 35px;
     left: 19px;
 	cursor: pointer;
 }
 
 .hamburguer:before,
 .hamburguer:after {
-	background: black;
+	background: #fff;
 	content: '';
 	display: block;
 	width: 100%;
@@ -225,14 +226,14 @@ h1 {
 .hamburguer {
 		display: block;
 		width: 15px;
-		height: 4px;
+		height: 3.5px;
 		position: relative;
-		top: 21px;
+		top: 20px;
 		left: 1px;
 		cursor: pointer;
 	}
 .hamburguer:before {
-	background: black;
+	background: #fff;
 	content: '';
 	display: block;
 	width: 100%;
@@ -241,7 +242,7 @@ h1 {
 	top: -10px;
 }
 .hamburguer:after {
-	background: black;
+	background: #fff;
 	content: '';
 	display: block;
 	width: 100%;
