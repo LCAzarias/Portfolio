@@ -201,6 +201,9 @@ h1 {
 .menu:hover {
 	box-shadow: 0 0 0 8px #fff, 0 0 0 8px #fff;
 	opacity: 0.2;
+	color: yellow;
+	transform: scale(1.1);
+	transition: all 0.4s ease-in;
 }
 
 .hamburguer {
@@ -212,12 +215,15 @@ h1 {
 	top: 32px;
     left: 18px;
 	cursor: pointer;
-	transition: .5s ease-in-out;
+	transition: .4s ease-in-out;
 }
 
 .hamburguer:hover {
 	box-shadow: 0 0 0 8px #fff, 0 0 0 8px #fff;
 	opacity: 0.2;
+	color: yellow;
+	transform: scale(1.1);
+	transition: all 0.4s ease-in;
 }
 
 .hamburguer:before,
@@ -228,15 +234,31 @@ h1 {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	transition: .5s ease-in-out;
+	transition: .4s ease-in-out;
 }
 .hamburguer:before{
 	top: -10px;
 	transform: ;
 }
 
+.hamburguer:before:hover {
+	box-shadow: 0 0 0 8px #fff, 0 0 0 8px #fff;
+	opacity: 0.2;
+	color: yellow;
+	transform: scale(1.1);
+	transition: all 0.4s ease-in;
+}
+
 .hamburguer:after{
 	bottom: -11px;
+}
+
+.hamburguer:after:hover {
+	box-shadow: 0 0 0 8px #fff, 0 0 0 8px #fff;
+	opacity: 0.2;		
+	color: yellow;
+	transform: scale(1.1);
+	transition: all 0.4s ease-in;						
 }
 
 	@media (max-width: 768px) {
@@ -275,7 +297,7 @@ input {
 }
 
 input:checked ~label .menu{
-	box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff
+	box-shadow: 0 0 0 90vh #fff, 0 0 0 100vw #fff
 }
 
 input:checked ~label .hamburguer{
