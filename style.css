@@ -238,7 +238,6 @@ h1 {
 }
 .hamburguer:before{
 	top: -10px;
-	transform: ;
 }
 
 .hamburguer:before:hover {
@@ -294,6 +293,12 @@ h1 {
 
 input {
 	display: none;
+}
+
+input:checked ~ul .actived{
+	display: flex;
+	color: red;
+	opacity: 5;
 }
 
 input:checked ~label .menu{
@@ -364,6 +369,13 @@ span {
 	width: 100%;
 	max-width: 1000px;
 	text-decoration: none;
+
+	list-style: none;
+
+	transform: translate(-50%, -50%);
+	opacity: 0.1;
+	transition: .25s 1s ease-in-out;
+
 
 	@media (max-width: 750px) {
 		font-size: 20px;
