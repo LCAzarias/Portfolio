@@ -185,7 +185,7 @@ h1 {
 	margin-left: 25%;
 	cursor: pointer;
 	box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
-	transition: box-shadow 1s ease-in-out;
+	transition: box-shadow 2s ease-in-out;
 	opacity: 0.5;
 
 	@media (max-width: 768px) {
@@ -295,14 +295,14 @@ input {
 	display: none;
 }
 
-input:checked ~ul .actived{
-	display: flex;
-	color: red;
-	opacity: 5;
+input:checked ~header .active{
+	color: yellow;
+	opacity: 0.9;
+	font-size: 30px;
 }
 
 input:checked ~label .menu{
-	box-shadow: 0 0 0 90vh #fff, 0 0 0 100vw #fff
+	box-shadow: 0 0 0 87vh #fff, 0 0 0 100vmin #fff;
 }
 
 input:checked ~label .hamburguer{
@@ -357,13 +357,13 @@ span {
 	transition: all 0.4s ease-in;
 }*/
 
-.actived {
+.active {
 	color: #fff;
 	border-radius: 10px;
 	padding: 15px 10px;
 	margin-left: 50px;
 	display: inline-block;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	text-align: center;
 	width: 100%;
@@ -373,8 +373,8 @@ span {
 	list-style: none;
 
 	transform: translate(-50%, -50%);
-	opacity: 0.1;
-	transition: .25s 1s ease-in-out;
+	opacity: 0;
+	transition: .5s 1s ease-in-out;
 
 
 	@media (max-width: 750px) {
@@ -387,16 +387,21 @@ span {
 	}
 }
 
-.actived:hover {
+.active:hover {
 	color: yellow;
 	transform: scale(1.1);
 	transition: all 0.4s ease-in;
 }
 
-li:hover {
-	color: yellow;
-	transform: scale(1.1);
-	transition: all 0.4s ease-out;
+.active li {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	cursor: pointer;
 }
 
 li {
