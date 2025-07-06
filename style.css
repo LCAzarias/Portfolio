@@ -95,7 +95,7 @@ h1 {
 		width: 50px;
 		height: 50px;
 		position: relative;
-		top: 35px;
+		top: 34px;
 		margin: 0 auto;
 	}
 }
@@ -122,7 +122,6 @@ h1 {
 
 .hamburguer:hover {
 	box-shadow: 0 0 0 0px #fff, 0 0 0 0px #fff;
-	
 	color: yellow;
 	transform: scale(1.1);
 	transition: all 0.4s ease-in-out;
@@ -167,7 +166,7 @@ h1 {
 		width: 26px;
 		height: 4.5px;
 		position: absolute;
-		top: 19px;
+		top: 20px;
 		left: 10px;
 		cursor: pointer;
 		margin: 0 auto;
