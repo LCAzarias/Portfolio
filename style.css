@@ -121,16 +121,16 @@ h1 {
 	transition: .4s ease-in-out;
 }
 
-.hamburguer:hover {
+.hamburguer:hover{
 	box-shadow: 0 0 0 0px #fff, 0 0 0 0px #fff;
 	background: yellow;
 	transform: scale(1.1);
 	transition: all 0.4s ease-in-out;
 }
 
-.hamburguer:before,
-.hamburguer:after {
-	background: #fd1010;
+.hamburguer::before,
+.hamburguer::after {
+	background: #fff;
 	content: '';
 	display: block;
 	width: 100%;
@@ -139,14 +139,12 @@ h1 {
 	transition: .4s ease-in-out;
 }
 
-
-
 .hamburguer:before {
 	top: -11px;
 }
 
-.hamburguer:before:hover {
-	box-shadow: 0 0 0 8px #fff, 0 0 0 8px #fff;
+.hamburguer:hover:before {
+	box-shadow: 0 0 0 0px #fff, 0 0 0 0px #fff;
 	background: yellow;
 	transform: scale(1.1);
 	transition: all 0.4s ease-in;
@@ -156,8 +154,8 @@ h1 {
 	bottom: -9px;
 }
 
-.hamburguer:after:hover {
-	box-shadow: 0 0 0 8px #fff, 0 0 0 8px #fff;
+.hamburguer:hover:after {
+	box-shadow: 0 0 0 0px #fff, 0 0 0 0px #fff;
 	background: yellow;
 	transform: scale(1.1);
 	transition: all 0.4s ease-in;
