@@ -252,36 +252,6 @@ input:checked~label .hamburguer:after {
 	bottom: 0;
 }
 
-span {
-	color: black;
-	font-size: 70px;
-	font-family: Arial, Helvetica, sans-serif;
-	text-align: center;
-
-	@media (max-width: 768px) {
-		font-size: 20px;
-		width: 100%;
-		max-width: 1000px;
-		display: flex;
-		flex-wrap: nowrap;
-		content: '';
-		z-index: 5;
-		position: relative;
-		padding: 0px;
-		margin: 0 auto;
-		text-align: justify;
-		justify-content: center;
-		align-items: center;
-		color: #fff;
-	}
-}
-
-span:hover {
-	color: yellow;
-	transform: scale(1.1);
-	transition: all 0.4s ease-in;
-}
-
 .active {
 	display: inline-flex;
 	margin: 0 auto;
@@ -298,7 +268,7 @@ span:hover {
 	text-decoration: none;
 	list-style: none;
 	transform: translate(-10%, -30%);
-	opacity: 0;
+	opacity: 0; 
 	transition: .3s 0.5s ease-in-out;
 	position: relative;
 
