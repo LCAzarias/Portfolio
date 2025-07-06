@@ -37,10 +37,16 @@ h2 {
 
 @media (max-width: 768px) {
 	.hero-container {
-		height: 100vh;
+		height: 80vh;
+		max-height: 1000px;
 		width: 100vw;
+		max-width: 1000px;
 		display: grid;
 		margin: 0 auto;
+		top: 50px;
+		left: 25px;
+		right: 25px;
+		bottom: 25px;
 		flex-wrap: wrap;
 		flex-direction: column;
 		align-items: center;
@@ -84,7 +90,7 @@ h1 {
 	position: relative;
 	top: 34px;
 	left: 3px;
-	margin-left: 14%;
+	margin: 0 auto;
 	cursor: pointer;
 	box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
 	transition: box-shadow 2s ease-in-out;
@@ -95,6 +101,7 @@ h1 {
 		width: 50px;
 		height: 50px;
 		position: relative;
+		margin: 0 auto;
 		top: 33px;
 		left: 5px;
 		margin: 0 auto;
@@ -121,7 +128,7 @@ h1 {
 	transition: .4s ease-in-out;
 }
 
-.hamburguer:hover{
+.hamburguer:hover {
 	box-shadow: 0 0 0 0px #fff, 0 0 0 0px #fff;
 	background: yellow;
 	transform: scale(1.1);
@@ -198,9 +205,10 @@ input {
 	display: none;
 }
 
-input:checked~header.active {
+input:checked~header .active {
+	color: #fff;
 	background: #454545;
-	opacity: 0.9;
+	opacity: 4;
 	width: 100%;
 	max-width: 1000px;
 	font-size: 30px;
@@ -217,13 +225,15 @@ input:checked~header.active {
 	@media (max-width: 768px) {
 		font-size: 25px;
 		padding: 5px;
-		margin-left: 25px;
+		width: 50%;
+		max-width: 1000px;
 		display: inline-block;
 		justify-content: center;
 		align-items: center;
 		flex-wrap: nowrap;
 		position: relative;
-		left: 50px;
+		left: 25%;
+		right: 25%;
 		top: 20px;
 		z-index: 10;
 		width: 100%;
@@ -232,7 +242,12 @@ input:checked~header.active {
 	}
 }
 
-
+input:checked~header .active:hover {
+	opacity: 0.7;
+	color: yellow;
+	transform: scale(1.1);
+	transition: all 0.4s ease-in;
+}
 
 input:checked~label .menu {
 	box-shadow: 0 0 0 10rem #fff, 0 0 0 50rem #fff;
@@ -252,6 +267,32 @@ input:checked~label .hamburguer:after {
 	bottom: 0;
 }
 
+span {
+	color: black;
+	font-size: 70px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+
+	@media (max-width: 768px) {
+		font-size: 10px;
+		width: 100%;
+		max-width: 1000px;
+		height: 50%;
+		max-height: 1000px;
+		display: flex;
+		flex-wrap: wrap;
+		content: '';
+		z-index: 5;
+		position: relative;
+		padding: 0px;
+		margin: 0 auto;
+		text-align: justify;
+		justify-content: center;
+		align-items: center;
+		color: black;
+	}
+}
+
 .active {
 	display: inline-flex;
 	margin: 0 auto;
@@ -260,15 +301,12 @@ input:checked~label .hamburguer:after {
 	border-radius: 10px;
 	padding: 0 5px 10px 5px;
 	width: 50%;
-	top: 50px;
-	height: 50px;
 	max-width: 1000px;
-	max-height: 1000px; 
 	text-align: center;
 	text-decoration: none;
 	list-style: none;
-	transform: translate(-10%, -30%);
-	opacity: 0; 
+	transform: translate(-50%, -50%);
+	opacity: 0;
 	transition: .3s 0.5s ease-in-out;
 	position: relative;
 
@@ -405,6 +443,23 @@ li {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
+
+	@media (max-width: 768px) {
+		.profile-container {
+			width: 50%;
+			max-width: 1000px;
+			height: 25%;
+			max-height: 1000px;
+			font-size: 20px;
+			padding: 1%;
+			margin-left: 20px;
+			margin-right: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+	}
 }
 
 .profile-content {
@@ -415,26 +470,26 @@ li {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 30vw;
+	width: 10vw;
 	background: #fff;
-	padding: 50px;
+	padding: 5px;
 	border-radius: 8px;
 	width: 100%;
 	max-width: 1000px;
 
-	@media (max-width: 750px) {
-		width: 50%;
+	@media (max-width: 768px) {
+		width: 100%;
 		max-width: 1000px;
 		height: 50%;
 		max-height: 1000px;
-		font-size: 20px;
+		font-size: 10px;
 		padding: 5px;
+		top: 2px;
 		margin: 0 auto;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-
 }
 
 .profile-image {
@@ -442,6 +497,20 @@ li {
 	height: auto;
 	border-radius: 50%;
 	border: 4px solid #D870D8;
+
+	@media (max-width: 768px) {
+		width: 50%;
+		max-width: 1000px;
+		height: 50%;
+		max-height: 1000px;
+		font-size: 10px;
+		padding: 5px;
+		top: 2px;
+		margin-top: auto;
+		display: grid;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .name-text {
@@ -449,6 +518,20 @@ li {
 	font-size: 30px;
 	font-weight: bold;
 	margin-top: 12px;
+
+	@media (max-width: 768px) {
+		width: 50%;
+		max-width: 1000px;
+		height: 50%;
+		max-height: 1000px;
+		font-size: 10px;
+		padding: 5px;
+		top: 2px;
+		margin: 0 auto;
+		display: grid;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .profile-text {
@@ -457,6 +540,20 @@ li {
 	text-align: center;
 	width: 50vh;
 	margin-top: 10px;
+
+	@media (max-width: 768px) {
+		width: 100%;
+		max-width: 1000px;
+		height: 50%;
+		max-height: 1000px;
+		font-size: 10px;
+		padding: 5px;
+		margin-top: 2px;
+		margin: 0 auto;
+		display: grid;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .home button {
@@ -589,6 +686,20 @@ p {
 	align-items: end;
 	box-sizing: border-box;
 	margin-left: 10px;
+
+	@media (max-width: 768px) {
+		width: 50%;
+		max-width: 1000px;
+		height: 50%;
+		max-height: 1000px;
+		font-size: 10px;
+		padding: 5px;
+		top: 2px;
+		margin-bottom: 2px;
+		display: grid;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .project-container {
