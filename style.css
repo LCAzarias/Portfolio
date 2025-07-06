@@ -123,14 +123,14 @@ h1 {
 
 .hamburguer:hover {
 	box-shadow: 0 0 0 0px #fff, 0 0 0 0px #fff;
-	color: yellow;
+	background: yellow;
 	transform: scale(1.1);
 	transition: all 0.4s ease-in-out;
 }
 
 .hamburguer:before,
 .hamburguer:after {
-	background: #fff;
+	background: #fd1010;
 	content: '';
 	display: block;
 	width: 100%;
@@ -139,13 +139,15 @@ h1 {
 	transition: .4s ease-in-out;
 }
 
+
+
 .hamburguer:before {
 	top: -11px;
 }
 
 .hamburguer:before:hover {
 	box-shadow: 0 0 0 8px #fff, 0 0 0 8px #fff;
-	color: yellow;
+	background: yellow;
 	transform: scale(1.1);
 	transition: all 0.4s ease-in;
 }
@@ -156,7 +158,7 @@ h1 {
 
 .hamburguer:after:hover {
 	box-shadow: 0 0 0 8px #fff, 0 0 0 8px #fff;
-	color: yellow;
+	background: yellow;
 	transform: scale(1.1);
 	transition: all 0.4s ease-in;
 }
@@ -199,7 +201,7 @@ input {
 }
 
 input:checked~header .active {
-	background: black;
+	background: #454545;
 	opacity: 0.9;
 	width: 100%;
 	max-width: 1000px;
@@ -280,11 +282,13 @@ span {
 	justify-content: space-around;
 	color: #fff;
 	border-radius: 10px;
+	padding: 0 5px 10px 5px;
 	width: 50%;
 	top: 50px;
-	height: 70px;
+	height: 60px;
 	max-width: 1000px;
-	max-height: 100px; ;
+	max-height: 1000px; 
+	text-align: center;
 	text-decoration: none;
 	list-style: none;
 	transform: translate(-10%, -30%);
@@ -297,7 +301,7 @@ span {
 		font-size: 20px;
 		padding: 5px;
 		margin: 0 auto;
-		width: 100%;
+		width: 50%;
 		max-width: 1000px;
 		display: block;
 		justify-content: center;
