@@ -144,7 +144,7 @@ h1 {
 }
 
 .hamburguer:hover:before {
-	box-shadow: 0 0 0 0px #fff, 0 0 0 0px #fff;
+	box-shadow: 0 0 0 0px #fff, 0 0 0 px #fff;
 	background: yellow;
 	transform: scale(1.1);
 	transition: all 0.4s ease-in;
@@ -270,7 +270,7 @@ span {
 		text-align: justify;
 		justify-content: center;
 		align-items: center;
-		color: rgb(228, 12, 12);
+		color: #fff;
 	}
 }
 
