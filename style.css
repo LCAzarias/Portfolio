@@ -128,8 +128,8 @@ h1 {
 	transition: all 0.4s ease-in-out;
 }
 
-.hamburguer::before,
-.hamburguer::after {
+.hamburguer:before,
+.hamburguer:after {
 	background: #fff;
 	content: '';
 	display: block;
@@ -198,7 +198,7 @@ input {
 	display: none;
 }
 
-input:checked~header .active {
+input:checked~header.active {
 	background: #454545;
 	opacity: 0.9;
 	width: 100%;
@@ -231,6 +231,8 @@ input:checked~header .active {
 		margin: 0px 50px;
 	}
 }
+
+
 
 input:checked~label .menu {
 	box-shadow: 0 0 0 10rem #fff, 0 0 0 50rem #fff;
@@ -274,6 +276,12 @@ span {
 	}
 }
 
+span:hover {
+	color: yellow;
+	transform: scale(1.1);
+	transition: all 0.4s ease-in;
+}
+
 .active {
 	display: inline-flex;
 	margin: 0 auto;
@@ -283,7 +291,7 @@ span {
 	padding: 0 5px 10px 5px;
 	width: 50%;
 	top: 50px;
-	height: 60px;
+	height: 50px;
 	max-width: 1000px;
 	max-height: 1000px; 
 	text-align: center;
@@ -293,7 +301,6 @@ span {
 	opacity: 0;
 	transition: .3s 0.5s ease-in-out;
 	position: relative;
-
 
 	@media (max-width: 768px) {
 		font-size: 20px;
