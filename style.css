@@ -47,28 +47,28 @@ h2 {
 
 h1 {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 60px;
+	font-size: 2.5rem;
 	color: #fff;
 	width: 100%;
-	max-width: 1000px;
-	display: flex;
-	flex-wrap: nowrap;
+	display: inline-flex;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
 	margin: 0 auto;
-	flex-wrap: nowrap;
+
 
 	@media (max-width: 768px) {
-		font-size: 30px;
+		font-size: 1.5rem;
 		margin: 0 auto;
+		flex-wrap: nowrap;
 	}
 }
 
 .menu {
 	display: block;
 	background: #696969;
-	width: 70px;
-	height: 70px;
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 	border: 0.5px solid #fff;
 	position: relative;
@@ -99,11 +99,11 @@ h1 {
 .hamburguer {
 	display: block;
 	background: #fff;
-	width: 32px;
-	height: 4.5px;
+	width: 25px;
+	height: 3.5px;
 	position: relative;
-	top: 33px;
-	left: 18px;
+	top: 24px;
+	left: 11px;
 	cursor: pointer;
 	transition: .4s ease-in-out;
 }
@@ -115,8 +115,8 @@ h1 {
 	transition: all 0.4s ease-in-out;
 }
 
-.hamburguer:before,
-.hamburguer:after {
+.hamburguer::before,
+.hamburguer::after {
 	background: #fff;
 	content: '';
 	display: block;
@@ -126,26 +126,20 @@ h1 {
 	transition: .4s ease-in-out;
 }
 
-.hamburguer:before {
-	top: -11px;
+.hamburguer::before {
+	top: -9px;
 }
 
-.hamburguer:hover:before {
+.hamburguer:hover::before,
+.hamburguer:hover::after {
 	box-shadow: 0 0 0 0px #fff, 0 0 0 px #fff;
 	background: yellow;
 	transform: scale(1.1);
 	transition: all 0.4s ease-in;
 }
 
-.hamburguer:after {
-	bottom: -9px;
-}
-
-.hamburguer:hover:after {
-	box-shadow: 0 0 0 0px #fff, 0 0 0 0px #fff;
-	background: yellow;
-	transform: scale(1.1);
-	transition: all 0.4s ease-in;
+.hamburguer::after {
+	bottom: -6px;
 }
 
 @media (max-width: 768px) {
@@ -154,30 +148,30 @@ h1 {
 		width: 26px;
 		height: 4.5px;
 		position: absolute;
-		top: 20px;
-		left: 10px;
+		top: 22px;
+		left: 12px;
 		cursor: pointer;
 		margin: 0 auto;
 	}
 
-	.hamburguer:before {
+	.hamburguer::before {
 		background: #fff;
 		content: '';
 		display: block;
 		width: 100%;
 		height: 100%;
 		position: absolute;
-		top: -10px;
+		top: -9px;
 	}
 
-	.hamburguer:after {
+	.hamburguer::after {
 		background: #fff;
 		content: '';
 		display: block;
 		width: 100%;
 		height: 100%;
 		position: absolute;
-		bottom: -9px;
+		bottom: -7px;
 	}
 }
 
@@ -191,35 +185,15 @@ input:checked~header .active {
 	opacity: 4;
 	width: 100%;
 	max-width: 1000px;
-	font-size: 30px;
+	font-size: 15px;
 	padding: 12px;
 	margin-left: 15px;
 	margin-right: 15px;
 	display: inline-flex;
-	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 	text-align: center;
 	position: relative;
-
-	@media (max-width: 768px) {
-		font-size: 25px;
-		padding: 5px;
-		width: 50%;
-		max-width: 1000px;
-		display: inline-block;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: nowrap;
-		position: relative;
-		left: 25%;
-		right: 25%;
-		top: 20px;
-		z-index: 10;
-		width: 100%;
-		max-width: 1000px;
-		margin: 0px 50px;
-	}
 }
 
 input:checked~header .active:hover {
@@ -227,10 +201,29 @@ input:checked~header .active:hover {
 	color: yellow;
 	transform: scale(1.1);
 	transition: all 0.4s ease-in;
+	bottom: 0;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	input:checked~header .active {
+		font-size: 0.8rem;
+		padding: 15px;
+		width: 50%;
+		height: 20%;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: 0;
+		text-align: center;
+	}
 }
 
 input:checked~label .menu {
-	box-shadow: 0 0 0 10rem #fff, 0 0 0 50rem #fff;
+	box-shadow: 0 0 0 5rem #fff, 0 0 0 39rem #fff;
 }
 
 input:checked~label .hamburguer {
@@ -247,29 +240,33 @@ input:checked~label .hamburguer:after {
 	bottom: 0;
 }
 
+@media (max-width: 768px) {
+	input:checked~header .active {
+		font-size: 1.0rem;
+		padding: 15px;
+		width: 90%;
+		display: block;
+		flex-direction: column;
+		gap: 10px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		/* A margem foi corrigida e zerada para o alinhamento funcionar corretamente. */
+		margin: 0;
+	}
+}
+
 span {
-	color: black;
-	font-size: 70px;
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
 
 	@media (max-width: 768px) {
-		font-size: 10px;
-		width: 100%;
-		max-width: 1000px;
-		height: 50%;
-		max-height: 1000px;
-		display: flex;
-		flex-wrap: wrap;
-		content: '';
-		z-index: 5;
-		position: relative;
-		padding: 0px;
-		margin: 0 auto;
-		text-align: justify;
-		justify-content: center;
-		align-items: center;
-		color: black;
+		span {
+			font-size: 40px;
+			width: 90%;
+			margin: 0 auto;
+			display: block;
+		}
 	}
 }
 
@@ -282,6 +279,8 @@ span {
 	padding: 0 5px 10px 5px;
 	width: 50%;
 	max-width: 1000px;
+	height: 50%;
+	font-size: 1.4rem;
 	text-align: center;
 	text-decoration: none;
 	list-style: none;
@@ -291,17 +290,9 @@ span {
 	position: relative;
 
 	@media (max-width: 768px) {
-		font-size: 20px;
-		padding: 5px;
-		margin: 0 auto;
-		width: 50%;
-		max-width: 1000px;
-		display: block;
-		justify-content: center;
-		align-items: end;
-		flex-wrap: nowrap;
-		z-index: 5;
-		position: relative;
+		.active {
+			width: 90%;
+		}
 	}
 }
 
@@ -323,16 +314,18 @@ li {
 	justify-content: space-between;
 	text-decoration: none;
 	gap: 5px;
+}
 
-	@media (max-width: 768px) {
-		font-size: 20px;
-		padding: 1%;
-		margin-left: 20px;
-		margin-right: 20px;
+@media (max-width: 768px) {
+	li {
+		font-size: 1.0rem;
+		width: 100%;
+		max-width: 1000px;
+		height: 50%;
+		padding: 15px;
+		margin: 0 auto;
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: nowrap;
+		text-align: center;
 	}
 }
 
@@ -341,6 +334,18 @@ li {
 	height: 172px;
 	bottom: 20px;
 	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	.arrows {
+		width: 30%;
+		min-height: 100%;
+		top: 50px;
+		left: 50px;
+		bottom: 2px;
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 .arrows path {
@@ -402,76 +407,65 @@ li {
 	-webkit-animation-delay: 0s;
 }
 
-.content-container {
-	height: 100vh;
-	width: 100%;
-	background-color: #333;
-	color: #fff;
-}
-
 .profile-container {
 	color: #333;
+	width: 100%;
 	height: 100vh;
-	width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-image: url(./imagens/tecnologia-de-rede-futurista-azul_53876-100679.avif);
-	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
+}
 
-	@media (max-width: 768px) {
-		.profile-container {
-			width: 50%;
-			max-width: 100px;
-			height: 25%;
-			max-height: 100px;
-			font-size: 20px;
-			padding: 1%;
-			margin-left: 20px;
-			margin-right: 20px;
-			display: inline-block;
-			justify-content: center;
-			flex-wrap: wrap;
-		}
+@media (max-width: 768px) {
+	.profile-container {
+		width: 100vw;
+		max-width: 1000px;
+		height: 100%;
+		max-height: 1000px;
+		padding: 40px 20px;
+		align-items: flex-start;
+		display: block;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 }
 
 .profile-content {
 	width: 30vw;
+	max-width: 500px;
 }
 
 .profile-card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 10vw;
-	background: #fff;
-	padding: 5px;
-	border-radius: 8px;
 	width: 100%;
 	max-width: 1000px;
+	background: #fff;
+	padding: 25px;
+	border-radius: 8px;
+}
 
-	@media (max-width: 768px) {
-		display: block;
-		width: 100%;
-		max-width: 1000px;
-		height: 50%;
-		max-height: 1000px;
-		font-size: 10px;
-		padding: 5px;
-		top: 2px;
+@media (max-width: 768px) {
+	.profile-content {
+		width: 80vw;
 		margin: 0 auto;
-		justify-content: baseline;
+	}
+
+	.profile-card {
+		padding: 20px;
 	}
 }
 
 .profile-image {
 	width: 15vh;
-	height: auto;
+	height: 15vh;
+	object-fit: cover;
 	border-radius: 50%;
 	border: 4px solid #D870D8;
 
@@ -554,6 +548,18 @@ li {
 	margin-bottom: 20px;
 	margin-left: 15px;
 	background-position: right;
+}
+
+.content-container {
+	min-height: 100vh;
+	width: 100%;
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 20px;
 }
 
 footer {
@@ -704,6 +710,14 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+@media (max-width: 768px) {
+	.project-container {
+		width: 50%;
+		height: 50%;
+		display: block;
+	}
 }
 
 .project-text {
