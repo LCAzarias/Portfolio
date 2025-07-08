@@ -56,7 +56,6 @@ h1 {
 	text-align: center;
 	margin: 0 auto;
 
-
 	@media (max-width: 768px) {
 		font-size: 1.5rem;
 		margin: 0 auto;
@@ -528,33 +527,11 @@ li {
 	}
 }
 
-.home button {
-	color: #fff;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	font-size: 1.4rem;
-	font-weight: bold;
-	width: 10vw;
-	height: 7vh;
-	border-radius: 10px;
-	border: 2px solid #333;
-	box-shadow: 4px 4px #fff;
-	background-color: rgb(3, 3, 85);
-	cursor: pointer;
-	padding: 12px 0px 10px 5px;
-	display: grid;
-	justify-content: space-around;
-	background-repeat: no-repeat;
-	margin-top: 15px;
-	margin-bottom: 20px;
-	margin-left: 15px;
-	background-position: right;
-}
-
 .content-container {
 	min-height: 100vh;
 	width: 100%;
 	background-color: #333;
-	color: #fff;
+	color: #ee0c0c;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -798,12 +775,12 @@ p {
 	max-width: 1000px;
 	display: flex;
 	text-decoration: none;
-	color: #fff;
+	color: black;
 	border-radius: 0.5rem;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 30px;
 	padding: 10px 5px 10px 5px;
-	position: left;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	justify-content: space-around;
@@ -828,8 +805,6 @@ p {
 	width: 10vw;
 	font-weight: bold;
 }
-
-
 
 textarea {
 	color: black;
