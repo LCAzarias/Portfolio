@@ -260,14 +260,15 @@ span {
 	text-align: center;
 
 }
-	@media (max-width: 768px) {
-		span {
-			font-size: 40px;
-			width: 90%;
-			margin: 0 auto;
-			display: block;
-		}
+
+@media (max-width: 768px) {
+	span {
+		font-size: 40px;
+		width: 90%;
+		margin: 0 auto;
+		display: block;
 	}
+}
 
 
 .active {
@@ -428,13 +429,15 @@ li {
 		max-width: 1000px;
 		height: 100%;
 		max-height: 1000px;
-		padding: 40px 20px;
+		padding: 20px 20px;
 		align-items: flex-start;
 		display: block;
 		justify-content: center;
 		flex-wrap: wrap;
 	}
 }
+
+.
 
 .profile-content {
 	width: 30vw;
@@ -450,6 +453,7 @@ li {
 	background: #fff;
 	padding: 25px;
 	border-radius: 8px;
+	margin-left: 15px;
 }
 
 @media (max-width: 768px) {
@@ -533,7 +537,7 @@ li {
 
 
 .content-container {
-	min-height: 100vh;
+	min-height: 10vh;
 	width: 100%;
 	color: #fff;
 	display: flex;
@@ -550,9 +554,9 @@ li {
 }
 
 footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;	
+	display: block;
+	justify-content: baseline;
+	align-items: first baseline;
 	width: 100%;
 	bottom: 2px;
 }
@@ -574,6 +578,7 @@ button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 0 auto;
 }
 
 button:hover {
@@ -592,7 +597,7 @@ button:hover {
 	height: 11vh;
 	border-radius: 15px;
 	border: solid;
-	padding: 15px 10px 15px 55px;
+	padding: 5px 10px 15px 55px;
 	background-color: #c2e5f3;
 	background-image: url(./imagens/linkedin-gratis-vetor.jpg);
 	background-repeat: no-repeat;
@@ -606,7 +611,8 @@ button:hover {
 	text-align: end;
 	align-items: center;
 }
-	@media (max-width: 768px) {
+
+@media (max-width: 768px) {
 	.profile-button {
 		width: 100%;
 		max-width: 1000px;
@@ -632,7 +638,7 @@ p {
 
 @media (max-width: 768px) {
 	p {
-		/*font-size: 1.9rem;
+		font-size: 1.9rem;
 		width: 100%;
 		max-width: 1000px;
 		height: 50%;
@@ -642,11 +648,11 @@ p {
 		margin-left: 10px;
 		display: block;
 		justify-content: center;
-		align-items: center;*/
-	font-size: 1.2rem;
-	text-align: center;
-	margin: 0;
-	padding: 0 10px;
+		align-items: center;
+		font-size: 1.2rem;
+		text-align: center;
+		margin: 0;
+		padding: 0 10px;
 	}
 }
 
@@ -680,25 +686,28 @@ p {
 }
 
 .profile-sinopse {
-	width: 25vw;
+	width: 100%;
+	max-width: 50ch;
+	height: auto;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #fff;
-	font-size: 22px;
-	flex-direction: column;
-	display: flex;
-	justify-content: end;
-	align-items: end;
+	font-size: clamp(1.1rem, 1rem + 0.5vw 1.6rem);
+	text-align: justify;
+	hyphens: auto;
+	padding: 15px;
+	margin: 20px 10px;
 	box-sizing: border-box;
-	margin-left: 10px;
+	margin-left: 15px;
 
+	}		
 	@media (max-width: 768px) {
+		.profile-sinopse {
 		width: 100%;
 		max-width: 1000px;
 		height: 50%;
 		max-height: 1000px;
 		font-size: 1.1rem;
-		padding: 5px
-		top: 2px;
+		padding: 5px top: 2px;
 		margin-bottom: 2px;
 		display: grid;
 		text-align: justify;
@@ -726,7 +735,7 @@ p {
 		height: auto;
 
 		flex-direction: column;
-		
+
 	}
 }
 
