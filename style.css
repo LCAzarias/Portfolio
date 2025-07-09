@@ -638,24 +638,6 @@ button:hover {
 	}
 }
 
-.home-form button {
-	width: 7vw;
-	height: 7vh;
-	border-radius: 10px;
-	border: solid;
-	padding: 18px 10px 5px 15px;
-	display: grid;
-	text-align: center;
-	align-items: center;
-	background-repeat: no-repeat;
-	top: 5px;
-	left: 10px;
-	margin-top: 18px;
-	margin-bottom: 20px;
-	margin-left: 10px;
-	background-image: url(./imagens/home-iconGimp.png);
-}
-
 p {
 	font-size: 25px;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
