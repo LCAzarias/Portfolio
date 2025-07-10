@@ -131,7 +131,7 @@ h1 {
 
 .hamburguer:hover::before,
 .hamburguer:hover::after {
-	box-shadow: 0 0 0 0px #fff, 0 0 0px #fff;
+	box-shadow: 0 0 0 0px #fff, 0 0 0 0px #fff;
 	background: yellow;
 	transform: scale(1.1);
 	transition: all 0.4s ease-in;
@@ -564,7 +564,7 @@ button {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-size: 1.4rem;
 	font-weight: bold;
-	width: 15%;
+	width: 20%;
 	height: 7vh;
 	border: none;
 	border-radius: 10px;
