@@ -785,7 +785,7 @@ p {
 	height: 5%;
 	border: 4px solid #4caf50;
 	padding: 10px 30px;
-	display: flex;
+	display: block;
 	/* Ajuste a posição do card IMC */
 	background: rgba(0, 0, 0, 0.7);
 	backdrop-filter: blur(5px);
@@ -801,7 +801,7 @@ p {
 	height: 5%;
 	border: 4px solid #2196f3;
 	padding: 10px 30px;
-	display: flex;
+	display: block;
 	/* Ajuste a posição do card IMC */
 	background: rgba(0, 0, 0, 0.7);
 	backdrop-filter: blur(5px);
@@ -819,7 +819,7 @@ p {
 	height: 15%;
 	border: 4px solid #f44336;
 	padding: 10px 30px;
-	display: flex;
+	display: block;
 	/* Ajuste a posição do card IMC */
 	background: rgba(0, 0, 0, 0.7);
 	backdrop-filter: blur(5px);
@@ -835,7 +835,7 @@ p {
 	height: 15%;
 	border: 4px solid #ff9800;
 	padding: 10px 30px;
-	display: flex;
+	display: block;
 	/* Ajuste a posição do card IMC */
 	background: rgba(0, 0, 0, 0.7);
 	backdrop-filter: blur(5px);
