@@ -555,11 +555,10 @@ li {
 }
 
 footer {
-	display: block;
-	justify-content: baseline;
-	align-items: first baseline;
+	color: #f0f0f0;
+	text-align: center;
+	padding: 20px 15px;
 	width: 100%;
-	bottom: 2px;
 }
 
 button {
@@ -568,18 +567,17 @@ button {
 	font-size: 1.4rem;
 	font-weight: bold;
 	width: 20%;
-	height: 7vh;
-	border: none;
+	max-width: 500px;
+	min-height: 7vh;
 	border-radius: 10px;
 	border: 2px solid #333;
 	box-shadow: 4px 4px #fff;
 	padding: 10px 12px 10px 12px;
 	background-color: rgb(3, 3, 85);
 	cursor: pointer;
-	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 auto;
+	transition: color 0.4s ease-in;
 }
 
 @media (max-width: 768px) {
