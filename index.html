@@ -14,9 +14,8 @@
 </head>
 
 <body>
-
+	<h2>HOME</h2>
 	<div class="hero-container" id="hero-container">
-			<h2>HOME</h2>
 		<input id="menu-hamburger" type="checkbox">
 		<label for="menu-hamburger">
 			<div class="menu">
@@ -49,7 +48,7 @@
 		<div class="content-container" id="content-container">
 			<div class="profile-container" id="profile-container">
 				<div class="profile-content" id="profile-content">
-				<h2>PERFIL</h2>
+					<h2>PERFIL</h2>
 					<div class="profile-card" id="profile-card">
 						<img class="profile-image" src="./imagens/433c1b82-fc4b-4ecc-8da2-6fb4d535e097.jpeg">
 						<span class="name-text"><i>Luis Carlos</i></span>
@@ -102,7 +101,7 @@
 					<div class="position-container">
 						<h2>PROJETOS</h2>
 						<div class="project-cardIMC">
-							<image class="project-image" src="./imagens/Tab IMC 2025-13-07.png"/>
+							<image class="project-image" src="./imagens/Tab IMC 2025-13-07.png" />
 							<p class="project-text">
 								"Projeto desenvolvido com o objetivo de simular uma calculadora para verificar o Indice
 								de Massa Corpórea (IMC)" - para este projeto foi utilizado as linguagens:
@@ -114,7 +113,7 @@
 							<p class="project-text">
 								"Projeto desenvolvido com o objetivo de simular uma calculadora para efetuar
 								cálculos básicos" - para este projeto foi utilizado as linguagens:
-								HTML-CSS-JavaScript	
+								HTML-CSS-JavaScript
 							</p>
 						</div>
 						<div class="project-cardCinema">
@@ -133,11 +132,18 @@
 								cálculos básicos" - para este projeto foi utilizado as linguagens:
 								HTML-CSS-JavaScript
 							</p>
-							</div>
 						</div>
-						</div>
+							<footer>
+					<div class="home">
+						<a href="#hero-container">
+							<button class="home">Home<img class="icon-projeto"></button></a>
+					</div>
+				</footer>
 					</div>
 				</div>
+			</div>
+			
+		</div>
 	</section>
 
 	<section>
@@ -153,10 +159,14 @@
 				<label class="contato" for="texto">Mensagem</label>
 				<textarea placeholder="Deixe sua mensagem" required name="texto" cols="50px" rows="10px"></textarea>
 				<button type="submit" class="home-enviar">Enviar</button>
+				
+				<footer>
+					<div class="home">
+						<a href="#hero-container">
+							<button class="home">Home<img class="icon-projeto"></button></a>
+					</div>
+				</footer>
 			</form>
-			<footer>
-				<a href="#hero-container"><button class="home-form">Home</button></a>
-			</footer>
 		</div>
 	</section>
 	<script src="menu.js"></script>
