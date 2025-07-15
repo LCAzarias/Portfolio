@@ -578,6 +578,7 @@ button {
 	justify-content: center;
 	align-items: center;
 	transition: color 0.4s ease-in;
+	bottom: 2PX;
 }
 
 @media (max-width: 768px) {
