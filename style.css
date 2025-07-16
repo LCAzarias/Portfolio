@@ -566,13 +566,14 @@ button {
 	font-size: 1.4rem;
 	font-weight: bold;
 	text-align: center;
-	width: 20%;
-	max-width: 100px;
+	/* Removemos a largura fixa para um botão mais flexível. */
+	/* A largura será controlada pelo padding e pelo conteúdo. */
+	min-width: 160px; /* Garante uma largura mínima para melhor clique. */
 	height: auto;
 	border-radius: 10px;
 	border: 2px solid #333;
 	box-shadow: 4px 4px #fff;
-	padding: 10px 12px;
+	padding: 12px 24px; /* Aumenta o padding para um visual mais equilibrado. */
 	background-color: rgb(3, 3, 85);
 	cursor: pointer;
 	transition: all 0.4s ease-in;
@@ -580,6 +581,8 @@ button {
 
 @media (max-width: 768px) {
 	button {
+		width: 50%; /* Ocupa uma largura relativa para se adaptar a telas menores. */
+		max-width: 280px; /* Evita que o botão fique largo demais em tablets. */
 		height: auto;
 		font-size: 1.1rem;
 		padding: 15px 20px;
@@ -936,4 +939,22 @@ textarea {
 	font-size: 1.5rem;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	padding-left: 10px;
+}
+
+/* --- Estilos para tornar a seção de contato responsiva --- */
+@media (max-width: 768px) {
+	.profile-contato {
+		/* Empilha os elementos do formulário verticalmente */
+		flex-direction: column;
+		/* Centraliza o formulário na tela */
+		align-items: center;
+		/* Alinha o conteúdo ao topo para melhor visualização */
+		justify-content: flex-start;
+		padding: 50px 20px; /* Adiciona espaçamento interno */
+	}
+
+	.contato, textarea {
+		/* Faz os campos do formulário ocuparem 90% da largura da tela */
+		width: 90%;
+	}
 }
