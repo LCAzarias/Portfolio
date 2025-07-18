@@ -727,7 +727,7 @@ p {
 }
 
 .project-container {
-	min-height: 100vh;
+	min-height: 1000vh;
 	width: 100%;
 	display: flex;
 	padding: 40px 15px;
