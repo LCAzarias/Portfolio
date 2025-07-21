@@ -417,7 +417,7 @@ li {
 .profile-container {
 	color: #333;
 	width: 100%;
-	height: 110vh;
+	max-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -451,11 +451,13 @@ li {
 	align-items: center;
 	width: 100%;
 	max-width: 1000px;
-
+	max-height: 1000px;
 	background: #fff;
 	padding: 25px;
 	border-radius: 8px;
-	margin-left: 15px;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	gap: 5px;
 }
 
 @media (max-width: 768px) {
@@ -562,29 +564,33 @@ footer {
 }
 
 button {
-	color:  #fff;
+	color: #fff;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-size: 1.4rem;
 	font-weight: bold;
 	text-align: center;
 	/* Removemos a largura fixa para um botão mais flexível. */
 	/* A largura será controlada pelo padding e pelo conteúdo. */
-	min-width: 160px; /* Garante uma largura mínima para melhor clique. */
+	min-width: 160px;
+	/* Garante uma largura mínima para melhor clique. */
 	height: auto;
 	border-radius: 10px;
 	border: 2px solid #333;
 	box-shadow: 4px 4px #fff;
-	padding: 12px 24px; /* Aumenta o padding para um visual mais equilibrado. */
+	padding: 12px 24px;
+	/* Aumenta o padding para um visual mais equilibrado. */
 	background-color: rgb(3, 3, 85);
 	cursor: pointer;
 	transition: all 0.4s ease-in;
-	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 @media (max-width: 768px) {
 	button {
-		width: 50%; /* Ocupa uma largura relativa para se adaptar a telas menores. */
-		max-width: 280px; /* Evita que o botão fique largo demais em tablets. */
+		width: 50%;
+		/* Ocupa uma largura relativa para se adaptar a telas menores. */
+		max-width: 280px;
+		/* Evita que o botão fique largo demais em tablets. */
 		height: auto;
 		font-size: 1.1rem;
 		padding: 15px 20px;
@@ -779,7 +785,7 @@ p {
 .project-image {
 	width: 100%;
 	height: 100%;
-	padding: 10px;	
+	padding: 10px;
 }
 
 .project-cardIMC {
@@ -854,6 +860,7 @@ p {
 }
 
 @media (max-width: 768px) {
+
 	.project-cardIMC,
 	.project-cardCalculadora,
 	.project-cardCinema,
@@ -910,6 +917,7 @@ p {
 	left: 50%;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	margin-left: 15px;
 }
 
 .contato {
@@ -924,6 +932,7 @@ p {
 	display: flex;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	margin-left: 15px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -936,6 +945,7 @@ textarea {
 	width: 35vw;
 	height: 20vh;
 	margin-top: 10px;
+	margin-left: 15px;
 	border-radius: 10px;
 	font-size: 1.5rem;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -951,7 +961,8 @@ textarea {
 		align-items: center;
 		/* Alinha o conteúdo ao topo para melhor visualização */
 		justify-content: flex-start;
-		padding: 50px 20px; /* Adiciona espaçamento interno */
+		padding: 50px 20px;
+		/* Adiciona espaçamento interno */
 	}
 
 	.contato, textarea {
