@@ -451,6 +451,7 @@ li {
 	align-items: center;
 	width: 100%;
 	max-width: 1000px;
+	max-height: 100vh;
 	background: #fff;
 	padding: 25px;
 	border-radius: 8px;
