@@ -727,8 +727,8 @@ p {
 }
 
 .project-container {
-	min-height: 10vh;
-	max-height: 1000vh;
+	max-height: 100vh;
+	overflow-y: auto;
 	width: 100%;
 	display: flex;
 	padding: 40px 15px;
