@@ -578,6 +578,7 @@ button {
 	background-color: rgb(3, 3, 85);
 	cursor: pointer;
 	transition: all 0.4s ease-in;
+	margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
