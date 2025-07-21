@@ -456,8 +456,7 @@ li {
 	padding: 25px;
 	border-radius: 8px;
 	margin-left: 5px;
-	margin-bottom: 15px;
-	gap: 5px;
+	margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {
@@ -582,7 +581,7 @@ button {
 	background-color: rgb(3, 3, 85);
 	cursor: pointer;
 	transition: all 0.4s ease-in;
-	margin-top: 10px;
+	margin-top: 5px;
 }
 
 @media (max-width: 768px) {
