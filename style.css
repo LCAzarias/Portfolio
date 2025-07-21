@@ -451,6 +451,7 @@ li {
 	align-items: center;
 	width: 100%;
 	max-width: 1000px;
+
 	background: #fff;
 	padding: 25px;
 	border-radius: 8px;
@@ -727,8 +728,8 @@ p {
 }
 
 .project-container {
-	max-height: 100vh;
-	overflow-y: auto;
+	min-height: 10vh;
+	max-height: 1000vh;
 	width: 100%;
 	display: flex;
 	padding: 40px 15px;
