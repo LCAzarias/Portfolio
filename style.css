@@ -773,8 +773,6 @@ p {
 	width: 100%;
 	height: 25%;
 	min-height: 100px;
-	overflow: scroll;
-	/* Garante que nada saia do card */
 }
 
 .project-image {
