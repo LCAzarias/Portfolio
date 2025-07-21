@@ -417,6 +417,7 @@ li {
 .profile-container {
 	color: #333;
 	width: 100%;
+	height: 110vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -727,7 +728,7 @@ p {
 
 .project-container {
 	max-height: 100vh;
-	overflow-y: auto
+	overflow-y: auto;
 	width: 100%;
 	display: flex;
 	padding: 40px 15px;
