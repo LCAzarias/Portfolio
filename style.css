@@ -432,11 +432,12 @@ li {
 	.profile-container {
 		/* width: 100vw removido para evitar overflow. */
 		height: 100%;
-		max-height: 1000px;
+		max-height: 100vh;
 		padding: 20px 20px;
 		align-items: flex-start;
 		display: block;
 		justify-content: center;
+		overflow: scroll;
 	}
 }
 
@@ -515,26 +516,18 @@ li {
 
 .profile-text {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 30px;
+	font-size: 1.8rem; /* Tamanho de fonte escalável (equivalente a ~29px) */
 	text-align: center;
-	width: 50vh;
-	margin-top: 9px;
-	flex-direction: column;
-	margin: 0 auto;
+	width: 100%;
+	max-width: 45ch; /* Limita a largura da linha para melhor legibilidade */
+	margin: 15px auto 0; /* Espaçamento superior e centralização horizontal */
+	color: #333; /* Garante que a cor do texto seja definida */
+}
 
-	@media (max-width: 768px) {
-		width: 100%;
-		max-width: 1000px;
-		height: 40%;
-		max-height: 100px;
-		font-size: 20px;
-		text-align: center;
-		padding: 1px;
-		margin-top: 15px;
-		margin: 0 auto;
-		display: block;
-		justify-content: center;
-		align-items: center;
+@media (max-width: 768px) {
+	.profile-text {
+		font-size: 1.25rem; /* Reduz a fonte para telas menores (equivalente a 20px) */
+		/* A altura fixa foi removida para permitir que o texto flua naturalmente */
 	}
 }
 
@@ -586,14 +579,13 @@ button {
 
 @media (max-width: 768px) {
 	button {
-		width: 50%;
+		width: 80%;
 		/* Ocupa uma largura relativa para se adaptar a telas menores. */
-		max-width: 280px;
+		max-width: 320px;
 		/* Evita que o botão fique largo demais em tablets. */
-		height: auto;
 		font-size: 1.1rem;
 		padding: 15px 20px;
-		margin-top: 16px;
+		margin-top: 14px;
 	}
 }
 
@@ -702,34 +694,24 @@ p {
 
 .profile-sinopse {
 	width: 100%;
-	max-width: 50ch;
+	max-width: 55ch; /* Unidade 'ch' é ótima para legibilidade, baseada na largura do caractere '0' */
 	height: auto;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #fff;
-	font-size: clamp(1.1rem, 1rem + 0.5vw 1.6rem);
+	font-size: clamp(1.1rem, 1.5vw, 1.4rem); /* Ajuste no clamp para uma escala mais suave */
 	text-align: justify;
 	hyphens: auto;
-	padding: 15px;
-	margin: 20px 10px;
+	padding: 0 15px; /* Adiciona padding lateral para o texto não colar nas bordas */
+	margin: 20px auto; /* Centraliza o bloco de texto horizontalmente */
 	box-sizing: border-box;
-	margin-left: 15px;
-
 }
 
 @media (max-width: 768px) {
 	.profile-sinopse {
-		width: 100%;
-		max-width: 1000px;
-		height: 50%;
-		max-height: 1000px;
-		font-size: 1.1rem;
-		padding: 5px 2px;
-		margin-bottom: 2px;
-		display: grid;
-		text-align: justify;
-		justify-content: center;
-		align-items: center;
-		flex-direction: row;
+		/* Em telas menores, o texto ocupa a largura total para melhor leitura */
+		max-width: 100%;
+		padding: 0 20px; /* Aumenta o padding lateral para um respiro melhor no mobile */
+		margin: 20px 0;
 	}
 }
 
